@@ -17,6 +17,7 @@
         <webdrivermanager.version>4.2.2</webdrivermanager.version>
         <testng.version>7.3.0</testng.version>
         <assertj.version>3.18.1</assertj.version>
+        <owner.version>1.0.12</owner.version>
 
     </properties>
     <dependencies>
@@ -42,6 +43,12 @@
             <version>${assertj.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.aeonbits.owner</groupId>
+            <artifactId>owner</artifactId>
+            <version>${owner.version}</version>
+        </dependency>
+
 
 
     </dependencies>
