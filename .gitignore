@@ -1,0 +1,15 @@
+#MacOS env
+.DS_Store
+
+.settings/
+
+# Intellij
+.idea/
+*.iml
+
+# Maven
+logs/
+target/
+
+# Allure
+.allure
