@@ -9,4 +9,7 @@ public interface Configuration extends Config {
 
     @Key("base.url")
     String baseUrl();
+
+    @Key("timeout")
+    int timeout();
 }
