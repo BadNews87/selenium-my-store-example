@@ -1,5 +1,6 @@
 package driver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import io.github.bonigarcia.wdm.config.DriverManagerType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,6 +14,7 @@ public class DriverFactory implements IDriver {
     public WebDriver createInstance(String browser) {
         WebDriver driverInstance;
         DriverManagerType driverManagerType = DriverManagerType.valueOf(browser.toUpperCase());
+        WebDriverManager.getInstance(driverManagerType).setup();
 
         switch (driverManagerType) {
             case CHROME:
