@@ -19,7 +19,6 @@ public class BaseTest {
         DriverFactory driverFactory = new DriverFactory();
         driver = driverFactory.createInstance(browser);
 
-        driver.get(configuration.baseUrl());
     }
 
     @AfterMethod(alwaysRun = true)
